@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #e5e5cb;
+            color:#1a120b;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+            text-align: center;
+        }
+        #wrapper{
+            background-color: #d5cea3;
+            box-shadow: 5px 10px 10px #3c2a21;
+            border-radius: 10px;
+            padding: 1%;
+            width: fit-content;
+            margin: auto;
+        }
+        button{
+            padding: 10px;
+            background-color: tomato;
+            font-size: larger;
+            font-weight: 500;
+            border-radius: 10px;
+            border: 3px inset silver;
+            cursor: pointer;
+        }
+        #guessField{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #submit{
+            padding: 10px;
+            background-color: tomato;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 3px inset silver;
+            cursor: pointer;
+        }
+    </style>
+    <title>Guessing Nunber</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Number guessing game</h1>
+        <p>Guess a random number between 1 to 10.</p>
+        <p>You have 3 chances to guess the right number.</p><br>
+        <form class="form">
+            <h1>Guess a number</h1>
+            <input type="text" id="guessField">
+            <input type="submit" value="Submit" id="submit">
+        </form>
+
+        <div class="resultParas">
+            <p>Previous Guess: <span class="lastGuess"></span></p>
+            <p>Guess Remening: <span class="RemGuess">3</span></p>
+            <p class="lowHigh"></p>
+        </div>
+    </div>
+    <script src="guess.js"></script>
+</body>
+</html>
